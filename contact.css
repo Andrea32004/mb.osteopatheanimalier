@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+}
+
+.block1{
+    display: flex;
+    justify-content: center;
+}
+
+.block2{
+    padding-right: 80px;
+    padding-left: 80px;
+}
+
+h1, h2{
+    font-family: 'Dancing Script', 'Cookie','Great Vibes', cursive;
+    color: #6D071A;
+    font-size: 33px; 
+    text-align: center;
+}
+
+.ligne1{
+    width: 80px;
+    border: #5B3D0C solid 1px;
+    margin: auto;
+}
+
+.soustitre{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.icone_reseau{
+    width: 3.3vw;
+    padding: 4px;
+}
+
+.texte1{
+    line-height: 33px; 
+}
+
+.block3{
+    display: flex;
+    align-items: center;
+}

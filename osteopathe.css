@@ -1,0 +1,143 @@
+/* CONTENU IDENTIQUE */
+.titre1, .titre2{
+    font-family: 'Dancing Script', 'Cookie','Great Vibes', cursive;
+    color: #6D071A;
+}
+
+.ligne1, .ligne2{
+    border: #5B3D0C solid 1px;
+}
+
+
+/* BLOCK1 */
+
+.titre1{
+    font-size: 2.063rem;
+    margin-top: 113px;
+    margin-left: 24px;
+}
+
+.ligne1{
+    width: 167px;
+    margin-top: -21px;
+    margin-left: 23px;
+    height: 0px;
+}
+
+.block1{
+    display: flex;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-top: -59px;
+}
+
+.texte1{
+    line-height: 33px;
+    padding-right: 30px;
+    margin: auto;
+}
+
+.img_chien{
+    width: 55vw;
+    object-fit: contain;
+    min-width: 259px;
+}
+
+
+/* BLOCK 1b */
+.block1b{
+    display: flex;
+    padding-right: 40px;
+    padding-left: 80px;
+}
+
+.block1b_ecrit{
+    padding-left: 77px;
+}
+  
+
+.liste{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.liste li{
+    line-height: 33px; 
+}
+
+
+.img_poney{
+    width: 19vw;
+    object-fit: contain;
+    margin-top: -20px;
+    min-width: 205px;
+} 
+
+.texte3{
+text-align: center;
+}
+
+.plus{
+    height: 52px;
+    margin-left: 70vw;;
+    text-align: center;
+    border: 1px dotted black;
+    text-decoration: underline;
+    color: #00011E;
+    display: inline-block;
+    margin-top: -29px;
+    padding-right: 1px;
+}
+
+
+
+
+/* BLOCK 2 */
+
+.block2{
+    display: flex;
+    max-width: 1259px;
+    margin: auto;
+}
+
+.texte4{
+    text-align: center;
+    width: 526px;
+    margin: auto;
+    line-height: 33px;
+}
+
+
+.img_chaton, .img_chat{
+    width: 18vw;
+    height: auto;
+    object-fit: contain;
+    min-width: 162px; 
+}
+
+
+
+/* BLOCK3 */
+
+.texte5{
+    text-align: center;
+    max-width: 100%;
+}
+
+
+.img_motif{
+    display: flex;
+    width: 48vw;
+    object-fit: contain;
+    margin: auto;
+    min-width: 448px;
+}
+
+
+.texte6{
+    text-align: center;
+}
+
+

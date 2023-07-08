@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+}
+
+.block_accueil{
+    background-image: url(img/accueil_fond_transparent.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.maelys{
+    font-family: 'Dancing Script', 'Cookie','Great Vibes', cursive;
+    color: black;
+    font-size: 8rem;
+    margin-top: 121px;
+    position: absolute;
+}
+
+.job, .lieu{
+    position: absolute;
+}
+
+.job{
+    font-family: 'Dancing Script', 'Cookie','Great Vibes', cursive;
+    margin-top: 277px;
+    margin-left: 47vw;
+    font-size: 2.5rem;
+}
+
+.lieu{
+    margin-top: 323px;
+    margin-left: 62vw;
+    font-size: 1.313rem;
+}
+
+
+/* Caroussel */
+.caroussel{
+    width: 100vw;
+    margin-top: 450px;
+    min-width: 200px;
+    overflow: hidden;
+}
+
+.images{
+    display: flex;
+    height: 240px;
+    animation-duration: 35s ;
+    animation-name: slider;
+    animation-iteration-count:infinite;
+}
+
+@keyframes slider{
+    0%{
+        transform: translateX(0);
+    }
+    16%{
+        transform: translateX(-320px);
+    }
+    32%{
+        transform: translateX(-640px);
+    }
+    48%{
+        transform: translateX(-960px);
+    }
+    64%{
+        transform: translateX(-1280px);
+    }
+    80%{
+        transform: translateX(-1600px);
+    }
+    100%{
+        transform: translateX(-1920px);
+        animation-iteration-count: infinite;
+    }
+}
+
+
+
+
+/* déroulant */
+.block_deroulant{
+    display: flex;
+}
+
+.block_deroulant li{
+    display: block;
+    text-align: center;
+    line-height: 40px;
+}
+
+.maps{
+    width: 32vw;
+    padding-left: 39px;
+    min-width: 350px;
+}
+
+.texte1{
+    padding-right: 5px;
+}
+
+.texte_deroulant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.etude{
+    text-align: center;
+}
+
+.plus2{
+    margin-left: 83vw;
+    text-align: center;
+    padding: 1.5px;
+    border:1px dotted black;
+    text-decoration: underline;
+    color: #00011E; 
+    display: block; 
+}
+
+
+.plus{
+    text-decoration: underline;
+    color: #00011E; 
+    display: block; 
+    text-align: center;
+}
+
+.block_plus{
+    width: 360px;
+    border:1px dotted black ;
+    margin: auto;
+}
+
+/* Block1 accueil */
+@media (max-width: 742px){
+    .arrow{
+        display: none;
+    }
+    .block_accueil{
+        background-image: url(img/accueil_fond_transparent_mobile_n1.jpg);
+    }
+    .maelys{
+        font-size: 6rem;
+    }
+
+    .job{
+        font-size: 2.3rem;
+        margin-left: 28vw;
+    }
+
+    .images{
+        height: 164px;
+    }
+
+}
+
+@media (max-width: 481px){
+    .block_accueil{
+        background-image: url(img/accueil_fond_transparent_mobile.jpg);
+        background-position: top;
+    }
+
+    .maelys{
+        font-size: 3.2rem;
+        margin-top: 49px;
+    }
+
+    .job{
+        font-size: 1.4rem;
+        margin-top: 109px;
+        margin-left: 28vw;
+    }
+
+    .lieu{
+        font-size: 1rem;
+    margin-top: 137px;
+    margin-left: 45vw;
+    }
+
+
+    .caroussel{
+        margin-top: 274px;
+        height: 50vw;
+    }
+
+    .images{
+        height: 148px;
+    }
+}
+
+
+
+/* Block déroulant maps */
+@media (max-width: 551px){
+   .block_deroulant{
+    flex-direction: column-reverse;
+   } 
+
+   .maps{
+    min-width: 313px;
+    display: flex;
+    margin: auto;
+   }
+}
+
+
+

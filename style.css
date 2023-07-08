@@ -1,0 +1,279 @@
+/* écriture : 20px (1.25rem) pour ordi // 16px (1rem) télépohone max */
+
+body{
+    background-color: #EEE8DD ;
+    font-family: 'Futura Lt BT','PT Sans','PT Sans', sans-serif;
+    font-size: 1.25rem;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/*pour les lecteurs d'écran*/
+.sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+
+/* File d'ariane */
+.logo{
+  width: 4.8vw;
+  object-fit: contain;
+  min-width: 58px;
+}
+
+.block_ariane{
+    background-color: #cbb89a3b;
+    backdrop-filter: blur(5px);
+    height: 70px;
+    margin: 20px;
+    width: 91%;
+    position: fixed;
+    z-index: 1;
+    top: -2%;
+    left: 2%;
+    transform: translate (-50%, -50%);
+    display: flex;
+    padding-left: 0px;
+    
+}
+
+ .block_ariane a{
+    font-size: 1.375rem;
+    color: #00011E;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+ }
+
+ :focus-visible {
+    outline: #5B3D0C solid 3px;
+}
+
+:focus-visible.links {
+    outline: black dotted 3px;
+}
+
+.lien{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 53px;
+    flex-wrap: nowrap;
+    margin : auto
+}
+
+.cadre{
+    border: #CBB89A solid 3px;
+    padding: 1px;
+}
+
+.block_ariane a:hover{
+  background-color: #CBB89A;
+}
+
+
+/* mots en gras */
+span{
+    font-weight: bold;
+}
+
+
+/* flèche scroll */
+.scroll {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  
+.arrow {
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    border-left: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 0;
+  
+    /* animation */
+    -webkit-animation: btnscroll 2s infinite;
+    animation: btnscroll 2s infinite;
+  }
+  
+  @-webkit-keyframes btnscroll {
+    0% {
+      transform: rotate(-45deg) translate(0, 0);
+    }
+  
+    20% {
+      transform: rotate(-45deg) translate(-10px, 10px);
+    }
+  
+    40% {
+      transform: rotate(-45deg) translate(0, 0);
+    }
+  }
+  
+  @keyframes btnscroll {
+    0% {
+      transform: rotate(-45deg) translate(0, 0);
+    }
+  
+    20% {
+      transform: rotate(-45deg) translate(-10px, 10px);
+    }
+  
+    40% {
+      transform: rotate(-45deg) translate(0, 0);
+    }
+  }
+  
+
+/* bas de page */
+
+footer{
+  display: flex;
+  background-color: #CBB89A;
+  position: relative;
+  border: #F1EFEB solid 3px;
+  max-width: 100%;
+  font-family: 'Dancing Script', 'Cookie','Great Vibes', cursive;}
+
+
+.img_baspage{
+  width: 55vw;
+  max-width: 1100px;
+  object-fit: contain;
+  object-position: 50% 50%;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 70px;
+  min-width: 430px;
+}
+
+
+.element_baspage{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  /* max-width: 540px; */
+  height: 50vh;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 70px;
+  height: 291px;
+
+}
+
+.reservation{
+  color: #00011E;
+  font-size: 2.188rem;
+  text-decoration: underline;
+}
+
+
+.texte_reseausociaux{
+  font-size: 1.70rem;
+  color: #00011E;
+  align-items: center;
+  display: flex;
+  /* width: 60vw; */
+}
+
+.icone{
+  width: 3.5vw;
+  padding: 4px;
+}
+
+
+.mention{
+  font-size: 1.375rem;
+  color: #00011E;
+} 
+
+.ligne{
+  width: 30vw;
+  border: #5B3D0C dashed 1px;
+}
+
+.menu{
+  display: none;
+}
+
+/* MENU */
+@media (max-width: 742px){
+  body{
+    font-size: 1rem;
+  }
+
+  /* menu */
+  .logo{
+    display: none;
+  }
+
+  .lien{
+    flex-direction: column;
+  }
+
+  .block_ariane{
+    height: 100vh;
+    backdrop-filter: blur(15px);
+    margin-left: -100%;
+    /* margin: 0; */
+    transition: all 0.5s ease;
+  }
+
+  .menu{
+    display: flex;
+    width: 27px;
+    position: fixed;
+    right: 20px;
+    top: 40px;
+    z-index: 2;
+    
+  }
+
+  .mobile_menu{
+    margin-left: 0;
+  }
+
+  .img_baspage{
+    padding-left: 0;
+    min-width: 320px;
+}
+
+}
+
+/* BAS DE PAGE */
+@media (max-width: 744px){
+  footer{
+    flex-direction: column-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icone{
+    width: 32px;
+  }
+
+  .img_baspage{
+    padding-left: 0;
+}
+}
+
+
