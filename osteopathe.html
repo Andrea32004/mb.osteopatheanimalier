@@ -30,7 +30,17 @@
                 <a href="contact.html">Contact</a>
             </div>
     </ul>
+    <img class="menu" src="img/menu.png" alt="menu">
 </nav>
+
+<script>
+    const menuHamburger = document.querySelector(".menu")
+    const navLinks = document.querySelector(".block_ariane")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile_menu')
+    })
+</script>
 
 <!-- BLOCK1 -->
 
@@ -61,7 +71,7 @@
 </div>
 
     <p class="texte3"><span>Tous les animaux peuvent souffrir à un moment ou un autre de leur vie de ces baisses de mobilité</span>, que cela soit au niveau articulaire, musculaire ou bien viscéral. En effet elles sont la conséquence le plus souvent de <span>traumatismes externes</span> (choc, chute, mauvaise posture, travail/sport intense) ou bien <span>internes</span> (alimentation non adaptée, désordre métabolique / hormonal…).</p> 
-    
+    <br>
     <a href="https://www.veterinaire.fr/la-profession-veterinaire/nos-grands-dossiers/osteopathie-animale" target="_blank" class="plus">Définition de l’ordre national des vétérinaires</a> 
 
 <br>

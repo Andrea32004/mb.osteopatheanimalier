@@ -30,12 +30,22 @@
                 <a href="contact.html">Contact</a>
             </div>
     </ul>
+    <img class="menu" src="img/menu.png" alt="menu">
 </nav>
+
+<script>
+    const menuHamburger = document.querySelector(".menu")
+    const navLinks = document.querySelector(".block_ariane")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile_menu')
+    })
+</script>
 
 <!-- Déplacement -->
 <div class="block_horsfrais">
     <div class="block_titre1">
-        <h1 class="titre">Tarifs de consultations (hors frais de déplacement)</h1>
+        <h1 class="titre">Tarifs de consultations <span>(hors frais de déplacement)</span> </h1>
         <div class="ligne1"></div>
     </div> 
 
@@ -43,7 +53,6 @@
         <a href="contact.html" class="texte_avenir">Plus de détail <br> sur le cabinet <br> situé à Coullons (45720)</a>
     </div>
 
-    
     <div class="ellipse_canin">
         <p class="prix">50€</p>
         <img class="img" src="img/ellipse_canin_transp.png" alt="" >

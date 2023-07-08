@@ -1,3 +1,7 @@
+span{
+    font-size: 1.3rem;
+}
+
 /* BLOCK HORS FRAIS DE DEPLACEMENT */
 .block_horsfrais{
     display: flex;
@@ -143,7 +147,10 @@
     width: 40vw
 }
 
-@media (max-width: 992px) { 
+@media (max-width: 992px) {
+    .block_titre1{
+        padding-top: 0px;
+    } 
     .ellipse_canin{
         margin-top: 136px;
         /* baissé de 40px */
@@ -176,6 +183,52 @@
         margin-top: 397px;
         margin-left: 74%;
     } 
+}
+
+@media (max-width: 616px){
+    .block_titre1{
+        padding-top: 25px;
+    } 
+
+    .ellipse_canin{
+        margin-top: 159px;
+        margin-left: 5%;
+    }
+
+    .ellipse_equin{
+        margin-top: 159px;
+        margin-left: 55%;
+    }
+
+
+    .ellipse_nac{
+        margin-top: 363px;
+        margin-left: 55%;
+
+    }
+
+    .ellipse_caprin{
+        margin-top: 363px;
+        margin-left: 5%;
+
+    } 
+
+    
+    .ellipse_bovin{
+        margin-top: 600px;
+        margin-left: 5%;
+    }
+
+    .ellipse_felin{
+        margin-top: 600px;
+        margin-left: 55%;
+    }
+
+    .avenir{
+        margin: auto;
+    }
+    
+  
 }
 
 

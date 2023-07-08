@@ -96,11 +96,11 @@
 .maps{
     width: 32vw;
     padding-left: 39px;
-    min-width: 350px;
+    min-width: 375px;
 }
 
-.texte1{
-    padding-right: 5px;
+.clic_map{
+    display: none;
 }
 
 .texte_deroulant{
@@ -139,7 +139,9 @@
     margin: auto;
 }
 
-/* Block1 accueil */
+/* VERSION TABLETTE-TELEPHONE */
+
+/* BlLOCK ACCUEIL*/
 @media (max-width: 742px){
     .arrow{
         display: none;
@@ -149,6 +151,7 @@
     }
     .maelys{
         font-size: 6rem;
+
     }
 
     .job{
@@ -169,19 +172,20 @@
     }
 
     .maelys{
-        font-size: 3.2rem;
-        margin-top: 49px;
+        font-size: 3.8rem;
+         margin-top: 83px;
     }
 
     .job{
         font-size: 1.4rem;
-        margin-top: 109px;
-        margin-left: 28vw;
+        margin-top: 153px;
+        margin-left: 24vw;
     }
 
     .lieu{
-        font-size: 1rem;
-    margin-top: 137px;
+        /* display: none; */
+        font-size: 0.90rem;
+    margin-top: 181px;
     margin-left: 45vw;
     }
 
@@ -194,21 +198,55 @@
     .images{
         height: 148px;
     }
+
 }
 
 
 
-/* Block déroulant maps */
+/* BLOCK DEROULANT */
+
+
+@media (max-width: 738px){
+.maps{
+    padding-left: 10px;
+}
+
+}
+
 @media (max-width: 551px){
    .block_deroulant{
     flex-direction: column-reverse;
    } 
+
+   .texte_deroulant{
+    padding-left: 2px;
+   }
 
    .maps{
     min-width: 313px;
     display: flex;
     margin: auto;
    }
+
+   .clic_map{
+    display: flex;
+    font-size: 0.8rem;
+    font-style: italic;
+    justify-content: center;
+}
+
+.maps{
+    padding-left: 0;
+}
+
+.texte1 ul{
+    padding-left: 0;
+}
+
+.plus2{
+    margin: auto;
+}
+
 }
 
 

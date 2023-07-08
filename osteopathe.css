@@ -80,7 +80,7 @@ text-align: center;
 }
 
 .plus{
-    height: 52px;
+    min-height: 29px;
     margin-left: 70vw;;
     text-align: center;
     border: 1px dotted black;
@@ -141,3 +141,83 @@ text-align: center;
 }
 
 
+/* MOBILE */
+@media (max-width: 742px){
+
+    .titre1{
+        margin-top: 0;
+        font-size: 1.9rem;
+    }
+
+}
+
+@media (max-width: 598px){
+    .titre1{
+        font-size: 1.5rem;
+        margin-left: 1px;
+    }
+
+    .ligne1{
+        width: 100px;
+        margin-left: 0;
+    }
+
+    .texte1{
+        line-height: normal;
+        margin-top: 39px;
+    }
+    .block1{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .img_chien{
+        width: 43vw
+    }
+
+
+    .block1b{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0;
+    }
+
+    .img_poney{
+        min-width: 169px;
+    }
+
+    .block1b_ecrit{
+        padding-left: 0;
+    }
+
+    .liste{
+        padding-left: 0;
+    }
+
+    .img_chaton, .img_chat{
+        display: none;
+    }
+
+    .texte4{
+        text-align: start;
+        line-height: normal;
+    }
+
+    .plus{
+        width: 100%;
+        margin: auto;
+    }
+
+    .img_motif{
+        min-width: 322px;
+    }
+
+}
+
+
+/* TELEPHONE */
+@media (max-width: 450px){
+
+
+}
