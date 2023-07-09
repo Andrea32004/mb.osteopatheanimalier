@@ -1,3 +1,5 @@
+
+/* Italique */
 span{
     font-size: 1.3rem;
 }
@@ -17,7 +19,7 @@ span{
     align-items: center;
 }
 
-.titre{
+.titre1, .titre2{
     font-family: 'Dancing Script', 'Cookie','Great Vibes', cursive;
     color: #6D071A;
     font-size: 2.063rem;
@@ -46,12 +48,17 @@ span{
     text-align: center;
     border: #6D071A dashed 1px;
     border-radius: 50% 20% / 10% 40%;
-    padding: 10px;
+    padding: 15px;
 }
 
 .texte_avenir{
     text-decoration: underline;
     color: #00011E; 
+    width: 158px;
+    display: flex;
+    /* line-height: 23px; */
+    font-style: italic;
+
 }
 
 
@@ -120,8 +127,11 @@ span{
     height: 226px;
 }
 
+.def_nac{
+    font-style: italic;
+}
 /* A domicile */
-.titre{
+.titre1, .titre2{
     margin-left: 42px;
 }
 
@@ -186,48 +196,88 @@ span{
 }
 
 @media (max-width: 616px){
+    .titre1, .titre2{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 43px;
+    }
+
+    .ligne1{
+        margin-top: 71px;
+    }
+
     .block_titre1{
         padding-top: 25px;
     } 
 
+    .prix{
+        font-size: 1.4rem;
+    }
+
+    .img{
+        width: 123px;
+    }
+
     .ellipse_canin{
-        margin-top: 159px;
+        margin-top: 124px;
         margin-left: 5%;
     }
 
     .ellipse_equin{
-        margin-top: 159px;
+        margin-top: 203px;
         margin-left: 55%;
     }
 
-
+ /* 203 - 124 = 79 */
     .ellipse_nac{
-        margin-top: 363px;
-        margin-left: 55%;
+        margin-top: 332px;
+        margin-left: 5%;
 
     }
 
     .ellipse_caprin{
-        margin-top: 363px;
+        margin-top: 540px;        
         margin-left: 5%;
 
     } 
 
     
     .ellipse_bovin{
-        margin-top: 600px;
-        margin-left: 5%;
+        margin-top: 619px;
+        margin-left: 55%;
     }
 
     .ellipse_felin{
-        margin-top: 600px;
+        margin-top: 411px;
         margin-left: 55%;
     }
 
     .avenir{
         margin: auto;
+        padding: 7px;
+    }
+
+    .texte_avenir{
+        width: 223px;
+        font-size: 0.9rem;
+    }
+
+    .def_nac{
+        font-size:0.9rem;
+        padding-top: 40px;
     }
     
+/* FRAIS DE DEPLACEMENT */
+.titre2{
+    margin: auto;
+}
+.ligne2{
+    width: 80px;
+    margin: auto;
+}
+.block_domicile{
+    flex-direction: column-reverse;
+}
   
 }
 

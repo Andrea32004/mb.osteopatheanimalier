@@ -1,3 +1,4 @@
+
 /* CONTENU IDENTIQUE */
 .titre1, .titre2{
     font-family: 'Dancing Script', 'Cookie','Great Vibes', cursive;
@@ -151,6 +152,8 @@ text-align: center;
 
 }
 
+
+/* TELEPHONE */
 @media (max-width: 598px){
     .titre1{
         font-size: 1.5rem;
@@ -166,6 +169,10 @@ text-align: center;
         line-height: normal;
         margin-top: 39px;
     }
+
+    .texte2{
+        text-align: center;
+    }
     .block1{
         flex-direction: column;
         align-items: center;
@@ -173,7 +180,8 @@ text-align: center;
     }
 
     .img_chien{
-        width: 43vw
+        width: 43vw;
+        padding-top: 15px;
     }
 
 
@@ -199,6 +207,10 @@ text-align: center;
         display: none;
     }
 
+    .texte3{
+        text-align: left;
+    }
+
     .texte4{
         text-align: start;
         line-height: normal;
@@ -213,11 +225,10 @@ text-align: center;
         min-width: 322px;
     }
 
-}
-
-
-/* TELEPHONE */
-@media (max-width: 450px){
-
+    .texte6{
+        padding-bottom: 10px;
+    }
 
 }
+
+
