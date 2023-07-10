@@ -27,7 +27,17 @@
                     <a href="contact.html">Contact</a>
                 </div>
         </ul>
+        <img class="menu" src="img/menu.png" alt="menu">
     </nav>
+    
+    <script>
+        const menuHamburger = document.querySelector(".menu")
+        const navLinks = document.querySelector(".block_ariane")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile_menu')
+        })
+</script>
     <h1 class="titre">Qui suis-je ?</h1>
     <div class="ligne1"></div>
     

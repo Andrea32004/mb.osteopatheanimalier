@@ -69,3 +69,75 @@
 .texte4{
     text-align: center;
 }
+
+
+/* VERSION TABLETTE */
+@media (max-width: 1245px) {
+    .texte2{
+        /* padding-right: 25px; */
+        line-height: normal;  
+    }
+
+    
+
+}
+
+@media (max-width: 996px) {
+    .texte3{
+        line-height: normal;  
+    }
+
+    .block1{
+        padding-left: 5px;
+        padding-right: 5px;
+    } 
+
+    .block2{
+        padding-left: 5px;
+        padding-right: 5px;
+    } 
+
+    .texte3{
+        padding-left: 0;
+    }
+   
+
+
+    /* diplome text */
+    .block1{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 37px;  
+    }
+    .img_diplome{
+        width: 450px;
+    }
+    
+    .block2{
+        flex-direction: column;
+        margin-top: 37px;
+        align-items: center;
+    }
+
+    .img_attest{
+        width: 250px;
+    }
+}
+
+
+/* VERSION TELEPHONE */
+@media (max-width: 595px) {
+    .img_diplome{
+        width: 350px;
+    }
+}
+
+
+/* TITRE */
+@media (max-width: 741px) {
+    .titre{
+       margin-top: 20px;
+       margin-left: 1px; 
+    }
+}
+

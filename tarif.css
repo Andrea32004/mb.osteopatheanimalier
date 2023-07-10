@@ -43,7 +43,7 @@ span{
 
 .avenir{
     position: absolute;
-    margin-left: 82%;
+    margin-left: 78%;
     margin-top: 134px;
     text-align: center;
     border: #6D071A dashed 1px;
@@ -54,7 +54,6 @@ span{
 .texte_avenir{
     text-decoration: underline;
     color: #00011E; 
-    width: 158px;
     display: flex;
     /* line-height: 23px; */
     font-style: italic;
@@ -115,8 +114,8 @@ span{
 
 .ellipse_equin{
     position: absolute;
-    margin-top: 199px;
-    margin-left: 64%;
+    margin-top: 231px;
+    margin-left: 62%;
     height: 226px;
 }
 
@@ -153,14 +152,32 @@ span{
     line-height: 40px;
 }
 
-.img_zone{
-    width: 40vw
+.block_domicile ul{
+    padding: 0;
 }
 
+.img_zone{
+    width: 40vw;
+    min-width: 280px;
+}
+
+/* DIMENSION ELEMENTS EN ABSOLUTE */
+
+@media (max-width: 727px) {
+.block_horsfrais{
+    min-height: 100vh;
+}
+}
+
+
+
+
+
+
+
+
 @media (max-width: 992px) {
-    .block_titre1{
-        padding-top: 0px;
-    } 
+
     .ellipse_canin{
         margin-top: 136px;
         /* baissé de 40px */
@@ -175,8 +192,8 @@ span{
     }
 
     .ellipse_felin{
-        margin-top: 206px;
-        margin-left: 23%;
+        margin-top: 207px;
+        margin-left: 27%;
     }
 
     .ellipse_nac{
@@ -195,7 +212,8 @@ span{
     } 
 }
 
-@media (max-width: 616px){
+@media (max-width: 740px){
+
     .titre1, .titre2{
         font-size: 1.5rem;
         text-align: center;
@@ -210,13 +228,7 @@ span{
         padding-top: 25px;
     } 
 
-    .prix{
-        font-size: 1.4rem;
-    }
-
-    .img{
-        width: 123px;
-    }
+   
 
     .ellipse_canin{
         margin-top: 124px;
@@ -258,7 +270,6 @@ span{
     }
 
     .texte_avenir{
-        width: 223px;
         font-size: 0.9rem;
     }
 
@@ -268,17 +279,33 @@ span{
     }
     
 /* FRAIS DE DEPLACEMENT */
-.titre2{
-    margin: auto;
-}
-.ligne2{
-    width: 80px;
-    margin: auto;
-}
-.block_domicile{
-    flex-direction: column-reverse;
-}
-  
-}
+    .titre2{
+        margin: auto;
+    }
+    .ligne2{
+        width: 80px;
+        margin: auto;
+    }
+    .block_domicile{
+        flex-direction: column-reverse;
+    }
+   
+    .img_zone{
+        padding-top: 10px;
+    }
 
 
+
+
+}
+
+@media (max-width: 500px){
+.prix{
+    font-size: 1.4rem;
+}
+
+.img{
+    width: 123px; 
+    }
+
+}
