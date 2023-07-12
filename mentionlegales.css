@@ -95,18 +95,6 @@ margin: auto;
 
 
 
-.intro{
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: #CBB89A solid 3px;
-    font-size: 1.1rem;
-    line-height: 22px;
-    border-radius: 10px;
-}
-
-
 
 span{
     font-family: 'Dancing Script', 'Cookie','Great Vibes', cursive;
@@ -114,4 +102,9 @@ span{
 
 .texte{
     padding-left: 30px;
+}
+
+
+.dev{
+    text-align: right;
 }

@@ -7,6 +7,7 @@ span{
 /* BLOCK HORS FRAIS DE DEPLACEMENT */
 .block_horsfrais{
     display: flex;
+/* pour ordinateur : */
     min-height: 100vh;
 }
 
@@ -161,17 +162,6 @@ span{
     min-width: 280px;
 }
 
-/* DIMENSION ELEMENTS EN ABSOLUTE */
-
-@media (max-width: 727px) {
-.block_horsfrais{
-    min-height: 100vh;
-}
-}
-
-
-
-
 
 
 
@@ -309,3 +299,182 @@ span{
     }
 
 }
+
+
+
+
+
+
+/* DIMENSION ELEMENTS EN ABSOLUTE */
+/* par rapport à la fenètre de l'ordinateur */
+
+/* de grand à petit */
+    /* @media (max-width : 740px){
+                .block_horsfrais{
+                    min-height: 115vh;
+                }
+            }  
+
+    @media (max-width : 494px){
+        .block_horsfrais{
+            min-height: 110vh;
+        }
+    }   */
+
+        /* @media (max-width : 450px) {
+                .block_horsfrais{
+                    min-height: 100vh;
+                }
+            }  */
+   
+
+
+
+
+            /* @media (orientation: portrait) and (max-device-width : 1388px) {
+                .block_horsfrais{
+                    min-height: 50vh;
+                }
+            }  */
+
+
+
+
+
+            /* responsive normal */
+         
+         
+
+            /* téléphone + grand */
+            /* @media (orientation: portrait) and (max-device-width : 412px) {
+                .block_horsfrais{
+                    min-height: 80vh;
+                }
+            }  */
+
+            /* mon téléphone ?? */
+            /* @media (orientation: portrait) and (max-device-width : 390px) {
+                .block_horsfrais{
+                    min-height: 100vh;
+                }
+            } 
+
+
+            @media (orientation: portrait) and (max-device-width : 360px) {
+                .block_horsfrais{
+                    min-height: 90vh;
+                }
+            }  */
+
+/* ici */
+
+/* PAYSAGE */
+@media (orientation: landscape) and (max-device-width : 1390px) {
+    .block_horsfrais{
+        min-height: 75vh;
+    }
+}
+
+@media (orientation: landscape) and (max-device-width : 739px) {
+    .block_horsfrais{
+        min-height: 85vh;
+    }
+}
+
+@media (orientation: landscape) and (max-device-width : 667px) {
+    .block_horsfrais{
+        min-height: 105vh;
+    }
+}
+
+
+
+
+/* PORTRAIT */
+
+@media (orientation: portrait) and (max-device-width : 880px) {
+    .block_horsfrais{
+        min-height: 70vh;
+    }
+} 
+
+@media (orientation: portrait) and (max-device-width : 766px) {
+        .block_horsfrais{
+            min-height: 80vh;
+        }
+    } 
+
+    @media (orientation: portrait) and (max-device-width : 740px) {
+        .block_horsfrais{
+            min-height: 85vh;
+        }
+    } 
+
+    @media (orientation: portrait) and (max-device-width : 500px) {
+        .block_horsfrais{
+            min-height: 80vh;
+        }
+    } 
+
+    @media (orientation: portrait) and (max-device-width : 412px) {
+        .block_horsfrais{
+            min-height: 85vh;
+        }
+    } 
+
+    @media (orientation: portrait) and (max-device-width : 380px) {
+        .block_horsfrais{
+            min-height: 100vh;
+        }
+    } 
+
+    @media (orientation: portrait) and (max-device-width : 375px) {
+        .block_horsfrais{
+            min-height: 110vh;
+        }
+    } 
+ 
+
+
+/* ESSAI AVEC HEIGHT POUR PYSAGE TELEPHONE */
+@media (orientation: landscape) and (max-device-height : 595px) {
+    .block_horsfrais{
+        min-height: 110vh;
+    }
+}  
+
+@media (orientation: landscape) and (max-device-height : 552px) {
+    .block_horsfrais{
+        min-height: 115vh;
+    }
+}  
+
+@media (orientation: landscape) and (max-device-height : 476px) {
+    .block_horsfrais{
+        min-height: 130vh;
+    }
+}   
+
+@media (orientation: landscape) and (max-device-height : 423px) {
+    .block_horsfrais{
+        min-height: 150vh;
+    }
+}  
+
+@media (orientation: landscape) and (max-device-height : 375px) {
+    .block_horsfrais{
+        min-height: 205vh;
+    }
+} 
+
+@media (orientation: landscape) and (max-device-height : 370px) {
+    .block_horsfrais{
+        min-height: 170vh;
+    }
+} 
+
+@media (orientation: landscape) and (max-device-height : 330px) {
+    .block_horsfrais{
+        min-height: 190vh;
+    }
+} 
