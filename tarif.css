@@ -1,17 +1,12 @@
-
 /* Italique */
-span{
+span {
     font-size: 1.3rem;
 }
 
 /* BLOCK HORS FRAIS DE DEPLACEMENT */
-.block_horsfrais{
-    display: flex;
-/* pour ordinateur : */
-    min-height: 100vh;
-}
 
-.block_titre1{
+
+.block_titre1 {
     margin: 0;
     display: flex;
     width: 100%;
@@ -20,60 +15,61 @@ span{
     align-items: center;
 }
 
-.titre1, .titre2{
-    font-family: 'Dancing Script', 'Cookie','Great Vibes', cursive;
+.titre1,
+.titre2 {
+    font-family: 'Dancing Script', 'Cookie', 'Great Vibes', cursive;
     color: #6D071A;
     font-size: 2.063rem;
 }
 
-.ligne1, .ligne2{
+.titre1{
+    text-align: center;
+}
+
+.ligne1,
+.ligne2 {
     width: 156px;
     border: #5B3D0C solid 1px;
 }
 
-.ligne2{
+.ligne2 {
     margin-top: -33px;
 }
 
-.ligne1{
+.ligne1 {
     margin-top: 65px;
     position: absolute;
 }
 
-
-
-.avenir{
+.avenir {
     position: absolute;
-    margin-left: 78%;
-    margin-top: 134px;
+    margin-left: 82%;
+    margin-top: -13px;
     text-align: center;
     border: #6D071A dashed 1px;
     border-radius: 50% 20% / 10% 40%;
     padding: 15px;
 }
 
-.texte_avenir{
+.texte_avenir {
     text-decoration: underline;
-    color: #00011E; 
+    color: #00011E;
     display: flex;
-    /* line-height: 23px; */
     font-style: italic;
-
 }
 
-
-.img{
+.img {
     display: block;
     width: 160px;
 }
 
-.texte{
+.texte {
     text-align: center;
     margin-top: 4px;
 }
 
-.prix{
-    text-align: center;
+.prix {
+text-align: center;
     font-size: 2rem;
     font-weight: bold;
     position: absolute;
@@ -81,400 +77,289 @@ span{
     left: 34%;
 }
 
-/* CANIN */
-.ellipse_canin{
-    position: absolute;
-    margin-top: 96px;
-    margin-left: 6%;
-    height: 226px;
-}
-
-/* BOVIN */
-.ellipse_bovin{
-    position: absolute;
-    margin-top: 440px;
-    margin-left: 9%;
-    height: 226px;
-}
-
-/* FELIN */
-.ellipse_felin{
-    position: absolute;
-    margin-top: 246px;
-    margin-left: 28%;
-    height: 226px;
-}
-
-/* NAC */
-.ellipse_nac{
-    position: absolute;
-    margin-top: 403px;
-    margin-left: 48%;
-    height: 226px;
-}
-
-.ellipse_equin{
-    position: absolute;
-    margin-top: 231px;
-    margin-left: 62%;
-    height: 226px;
-}
-
-.ellipse_caprin{
-    position: absolute;
-    margin-top: 437px;
-    margin-left: 79%;
-    height: 226px;
-}
-
-.def_nac{
+.def_nac {
     font-style: italic;
 }
+
+.block_horsfrais {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.ellipse {
+    position: relative;
+    height: 226px;
+    order: 1;
+}
+
+.ellipse_canin {
+    margin-top: -23px;
+    margin-left: 4%;
+}
+
+.ellipse_bovin {
+    margin-top: 278px;
+    /* margin-left: -2%;  */
+}
+
+.ellipse_nac {
+    margin-top: 85px;
+margin-left: 5%;
+}
+
+.ellipse_felin {
+    margin-top: 246px;
+    margin-left: 9%;
+}
+
+
+
+.ellipse_equin {
+    margin-top: 21px;
+}
+
+.ellipse_caprin {
+    margin-top: 205px;
+    margin-left: 5%;
+}
+
 /* A domicile */
-.titre1, .titre2{
+.titre1,
+.titre2 {
     margin-left: 42px;
 }
 
-.ligne2{
+.ligne2 {
     margin-left: 38px;
-    
 }
 
-.block_domicile{
+.block_domicile {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.block_domicile li{
+.block_domicile li {
     display: block;
     text-align: center;
     line-height: 40px;
 }
 
-.block_domicile ul{
+.block_domicile ul {
     padding: 0;
 }
 
-.img_zone{
+.img_zone {
     width: 40vw;
     min-width: 280px;
 }
 
 
-
-
-
-@media (max-width: 992px) {
-
-    .ellipse_canin{
-        margin-top: 136px;
-        /* baissé de 40px */
-        margin-left: 1%;
-        /* baissé de 5% */
+@media (max-width: 1255px){
+    .ellipse_canin {
+        margin-left: 2%;
     }
-    
-    /* BOVIN */
-    .ellipse_bovin{
-        margin-top: 400px;
-        margin-left: 4%;
-    }
-
-    .ellipse_felin{
-        margin-top: 207px;
-        margin-left: 27%;
-    }
-
-    .ellipse_nac{
-        margin-top: 363px;
-        margin-left: 43%;
-    }
-    
-    .ellipse_equin{
-        margin-top: 159px;
-        margin-left: 59%;
-    }
-    
-    .ellipse_caprin{
-        margin-top: 397px;
-        margin-left: 74%;
-    } 
 }
 
-@media (max-width: 740px){
+@media (max-width: 1223px){
+    .ellipse_canin {
+        margin-left: 0%;
+    }
+}
 
-    .titre1, .titre2{
-        font-size: 1.5rem;
-        text-align: center;
-        margin-top: 43px;
+@media (max-width: 1193px){
+    .ellipse_nac {
+        margin-left: 2%;
+    }
+}
+
+@media (max-width: 1156px){
+    .ellipse_bovin {
+        margin-left: -4%;
+    }
+}
+
+@media (max-width: 1100px){
+    .ellipse_bovin {
+        margin-left: -8%;
+    }
+}
+
+@media (max-width: 1054px){
+    .ellipse_bovin {
+        margin-left: -12%;
+    }
+}
+
+@media (max-width: 1011px){
+    .ellipse_felin {
+        margin-left: 4%;
+    }
+}
+
+@media (max-width: 962px){
+    .ellipse_equin {
+        margin-left: -5%;
+    }
+}
+
+@media (max-width: 916px){
+    .ellipse_equin {
+        margin-left: -8%;
+    }
+}
+
+@media (max-width: 892px){
+    .ellipse_caprin {
+        margin-left: 1%;
+    }
+}
+
+@media (max-width: 880px){
+    .avenir{
+        padding: 7px;
+    }
+}
+
+
+@media (max-width: 862px){
+    .avenir{
+        font-size: 1.1rem ;
+    }
+}
+
+
+@media (max-width: 862px){
+    .img{
+        width: 146px;
     }
 
-    .ligne1{
-        margin-top: 71px;
+    .prix{
+        font-size: 1.8rem;
     }
-
-    .block_titre1{
-        padding-top: 25px;
-    } 
-
-   
-
-    .ellipse_canin{
-        margin-top: 124px;
-        margin-left: 5%;
-    }
-
-    .ellipse_equin{
-        margin-top: 203px;
-        margin-left: 55%;
-    }
-
- /* 203 - 124 = 79 */
-    .ellipse_nac{
-        margin-top: 332px;
-        margin-left: 5%;
-
-    }
-
-    .ellipse_caprin{
-        margin-top: 540px;        
-        margin-left: 5%;
-
-    } 
 
     
-    .ellipse_bovin{
-        margin-top: 619px;
-        margin-left: 55%;
+}
+
+@media (max-width: 752px){
+    .img{
+        width: 140px;
     }
 
-    .ellipse_felin{
-        margin-top: 411px;
-        margin-left: 55%;
+    .prix{
+        font-size: 1.75rem;
+    }
+}
+
+
+
+@media (max-width: 784px){
+    .ellipse_bovin {
+        margin-left: -17%;
+    }
+} 
+
+/* téléphone */
+
+
+
+@media (max-width: 741px){
+    .block_horsfrais{
+        flex-direction: column;
+        align-items: center;
+        justify-content: normal;
     }
 
     .avenir{
-        margin: auto;
-        padding: 7px;
+        margin-top: -125px;
+        margin-left: 39px;
     }
 
-    .texte_avenir{
-        font-size: 0.9rem;
-    }
-
-    .def_nac{
-        font-size:0.9rem;
-        padding-top: 40px;
+    .ellipse_canin {
+        margin-top: 0px;
+        margin-left: -54%;
     }
     
-/* FRAIS DE DEPLACEMENT */
-    .titre2{
-        margin: auto;
+    .ellipse_bovin {
+        margin-top: -142px;
+    margin-left: 32%;
     }
-    .ligne2{
-        width: 80px;
-        margin: auto;
+    
+    .ellipse_nac {
+        margin-top: -112px;
+        margin-left: -36%;
     }
-    .block_domicile{
-        flex-direction: column-reverse;
+    
+    .ellipse_felin {
+        margin-top: -156px;
+        margin-left: 66%;
     }
-   
-    .img_zone{
-        padding-top: 10px;
-    }
-
-
-
-
-}
-
-@media (max-width: 500px){
-.prix{
-    font-size: 1.4rem;
-}
-
-.img{
-    width: 123px; 
+    
+    
+    
+    .ellipse_equin {
+        margin-top: -105px;
+        margin-left: -67%;    }
+    
+    .ellipse_caprin {
+        margin-top: -167px;
+        margin-left: 27%;
+        height: 165px;
     }
 
-}
-
-
-
-
-
-
-/* DIMENSION ELEMENTS EN ABSOLUTE */
-/* par rapport à la fenètre de l'ordinateur */
-
-/* de grand à petit */
-    /* @media (max-width : 740px){
-                .block_horsfrais{
-                    min-height: 115vh;
-                }
-            }  
-
-    @media (max-width : 494px){
-        .block_horsfrais{
-            min-height: 110vh;
-        }
-    }   */
-
-        /* @media (max-width : 450px) {
-                .block_horsfrais{
-                    min-height: 100vh;
-                }
-            }  */
-   
-
-
-
-
-            /* @media (orientation: portrait) and (max-device-width : 1388px) {
-                .block_horsfrais{
-                    min-height: 50vh;
-                }
-            }  */
-
-
-
-
-
-            /* responsive normal */
-         
-         
-
-            /* téléphone + grand */
-            /* @media (orientation: portrait) and (max-device-width : 412px) {
-                .block_horsfrais{
-                    min-height: 80vh;
-                }
-            }  */
-
-            /* mon téléphone ?? */
-            /* @media (orientation: portrait) and (max-device-width : 390px) {
-                .block_horsfrais{
-                    min-height: 100vh;
-                }
-            } 
-
-
-            @media (orientation: portrait) and (max-device-width : 360px) {
-                .block_horsfrais{
-                    min-height: 90vh;
-                }
-            }  */
-
-/* ici */
-
-/* PAYSAGE */
-@media (orientation: landscape) and (max-device-width : 1390px) {
-    .block_horsfrais{
-        min-height: 75vh;
+    .prix_caprin{
+        margin-top: 30px;
     }
-}
-
-@media (orientation: landscape) and (max-device-width : 739px) {
-    .block_horsfrais{
-        min-height: 85vh;
-    }
-}
-
-@media (orientation: landscape) and (max-device-width : 667px) {
-    .block_horsfrais{
-        min-height: 105vh;
-    }
-}
 
 
-
-
-/* PORTRAIT */
-
-@media (orientation: portrait) and (max-device-width : 880px) {
-    .block_horsfrais{
-        min-height: 70vh;
-    }
 } 
 
-@media (orientation: portrait) and (max-device-width : 766px) {
-        .block_horsfrais{
-            min-height: 80vh;
+@media (max-width: 539px){
+    .avenir{
+        margin-top: -174px;
         }
-    } 
+}
 
-    @media (orientation: portrait) and (max-device-width : 740px) {
-        .block_horsfrais{
-            min-height: 85vh;
+
+
+
+/* no change */
+    @media (max-width: 500px){
+        .prix{
+            font-size: 1.4rem;
         }
-    } 
+        
+        .img{
+            width: 123px; 
+            }
+        
+    }
 
-    @media (orientation: portrait) and (max-device-width : 500px) {
-        .block_horsfrais{
-            min-height: 80vh;
+
+    /* FRAIS DE DEPLACEMENT */
+    @media (max-width: 740px) {
+        /* FRAIS DE DEPLACEMENT */
+        .titre2{
+            text-align: center;
         }
-    } 
-
-    @media (orientation: portrait) and (max-device-width : 412px) {
-        .block_horsfrais{
-            min-height: 85vh;
+        .ligne2{
+            width: 80px;
+            margin: auto;
+            margin-top: -27px;
         }
-    } 
-
-    @media (orientation: portrait) and (max-device-width : 380px) {
-        .block_horsfrais{
-            min-height: 100vh;
+        .block_domicile{
+            flex-direction: column-reverse;
         }
-    } 
 
-    @media (orientation: portrait) and (max-device-width : 375px) {
-        .block_horsfrais{
-            min-height: 110vh;
+        .img_zone{
+            padding-top: 29px;
         }
-    } 
- 
-
-
-/* ESSAI AVEC HEIGHT POUR PYSAGE TELEPHONE */
-@media (orientation: landscape) and (max-device-height : 595px) {
-    .block_horsfrais{
-        min-height: 110vh;
     }
-}  
 
-@media (orientation: landscape) and (max-device-height : 552px) {
-    .block_horsfrais{
-        min-height: 115vh;
-    }
-}  
 
-@media (orientation: landscape) and (max-device-height : 476px) {
-    .block_horsfrais{
-        min-height: 130vh;
-    }
-}   
 
-@media (orientation: landscape) and (max-device-height : 423px) {
-    .block_horsfrais{
-        min-height: 150vh;
-    }
-}  
 
-@media (orientation: landscape) and (max-device-height : 375px) {
-    .block_horsfrais{
-        min-height: 205vh;
-    }
-} 
 
-@media (orientation: landscape) and (max-device-height : 370px) {
-    .block_horsfrais{
-        min-height: 170vh;
-    }
-} 
 
-@media (orientation: landscape) and (max-device-height : 330px) {
-    .block_horsfrais{
-        min-height: 190vh;
-    }
-} 
