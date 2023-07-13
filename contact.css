@@ -4,13 +4,9 @@
 
 .block1{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.block2{
-    padding-right: 80px;
-    padding-left: 80px;
-}
 
 h1, h2{
     font-family: 'Dancing Script', 'Cookie','Great Vibes', cursive;
@@ -28,11 +24,13 @@ h1, h2{
 .soustitre{
     font-size: 1rem;
     text-align: center;
+    font-style: italic;
 }
 
 .icone_reseau{
     width: 3.3vw;
     padding: 4px;
+    min-width: 34px;
 }
 
 .texte1{
@@ -42,4 +40,16 @@ h1, h2{
 .block3{
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 551px){
+    .block1{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .soustitre{
+        font-size: 0.85rem;
+    }
 }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mentionlegales.css">
+    <link rel="stylesheet" href="style.css">
     <!-- écriture Titre -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +27,17 @@
                     <a class="contact" href="contact.html">RDV en ligne</a>
                 </div>
         </ul>
+        <img class="menu" src="img/menu.png" alt="menu">
     </nav>
+    
+    <script>
+        const menuHamburger = document.querySelector(".menu")
+        const navLinks = document.querySelector(".block_ariane")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile_menu')
+        })
+</script>
 
 <div class="block_titre1">
     <div class="titre1">Mentions légales </div>

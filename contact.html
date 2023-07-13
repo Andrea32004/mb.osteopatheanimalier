@@ -28,26 +28,36 @@
                     <a class="cadre" href="contact.html">Contact</a>
                 </div>
         </ul>
-    </nav>   
+        <img class="menu" src="img/menu.png" alt="menu">
+    </nav>
+    
+    <script>
+        const menuHamburger = document.querySelector(".menu")
+        const navLinks = document.querySelector(".block_ariane")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile_menu')
+        })
+</script>  
 
 <br><br><br><br>
 <div class="block1">
-    <div class="block2">
+    <div>
         <h1>Contactez-moi</h1>
         <div class="ligne1"></div>
         <p class="soustitre">Consultation sur RDV</p>
         <br>
-        <p class="texte1">Téléphone : 06 83 21 95 85 <br>Mail : maelys.bizet@gmail.com <br> Instagram : mb.ostepatheanimalier <br> LinkeIn et Facebook : Maëlys Bizet mb.osteopatheanimalier</p>
+        <p class="texte1">Téléphone : 06 83 21 95 85 <br>Mail : maelys.bizet@gmail.com <br> Instagram, Facebook et LinkedIn : mb.ostepatheanimalier</p>
     </div>
-
-    <div class="block2">
+<br>
+    <div>
         <h2>Suivez-moi</h2>
         <div class="ligne1"></div>
         <br>
         <div>
             <div class="block3"><p>Suivre l’actualités :  </p> <a href="https://www.instagram.com/mb.osteopatheanimalier/?hl=fr" target="_blank"><img class="icone_reseau" src="img/instagram.png" alt=""></a> <a href="https://www.facebook.com/profile.php?id=100092991590115" target="_blank"><img class="icone_reseau" src="img/facebook.png" alt=""></a></div>
 
-            <div class="block3"><p>Éxpériences professionnelles :</p> <a href="" target="_blank"><img class="icone_reseau" src="img/linkedin.png" alt=""></a> </div>
+            <div class="block3"><p>Éxpériences professionnelles :</p> <a href="https://www.linkedin.com/in/ma%C3%ABlys-bizet/" target="_blank"><img class="icone_reseau" src="img/linkedin.png" alt=""></a> </div>
 
             <div class="block3"><p>Avis google :</p> <a href="https://www.google.com/maps/place/Ma%C3%ABlys+Bizet+Ost%C3%A9opathe+Animalier+OA1271/@47.623551,2.4747612,17z/data=!4m22!1m13!4m12!1m4!2m2!1d2.4821213!2d47.6187501!4e1!1m6!1m2!1s0x8382b2ff4fb5d685:0xa9524382076c3195!2sAvis+google+de+ma%C3%ABlys+bizet+osteopathe+animalier!2m2!1d2.4773361!2d47.6235474!3m7!1s0x8382b2ff4fb5d685:0xa9524382076c3195!8m2!3d47.6235474!4d2.4773361!9m1!1b1!16s%2Fg%2F11shnywfn7?entry=ttu" target="_blank"><img class="icone" src="img/google.png" alt=""></a></div>
         </div>
@@ -58,9 +68,33 @@
     <div>
         <h1>Localisation du cabinet</h1>
         <div class="ligne1"></div>
+        <p>En cours de création </p>
     </div>
 </div>
    
+<br><br> 
+<footer>
+    <img class="img_baspage" src="img/bas_page.jpg" alt="Carte de visite. Consultations sur rendez-vous. Numéro de téléphone : 06.83.21.95.85. Adresse mail : maelys.bizet@gmail.com">
+    <div class="element_baspage">
+        <div class="reseauxsociaux">
+            <p class="texte_reseausociaux">Suivez-moi sur : <a href="https://www.facebook.com/profile.php?id=100092991590115" target="_blank"> <img class="icone" src="img/facebook.png" alt="facebook"><span class="sr-only">facebook de Maëlys Bizet</span> </a>
+
+            <a href="https://www.instagram.com/mb.osteopatheanimalier/?hl=fr" target="_blank"> <img class="icone" src="img/instagram.png" alt="instagram"><span class="sr-only">instagram Maëlys Bizet, ostéopathe animalier</span></a>
+
+            <a href="https://www.linkedin.com/in/ma%C3%ABlys-bizet/" target="_blank"> <img class="icone" src="img/linkedin.png" alt="linkedin"><span class="sr-only">linkedin de Maëlys (expérience professionnelles, étdues, etc)</span></a></p>
+            
+        </div>
+        <div class="ligne"></div>
+        <div>
+            <p class="texte_reseausociaux">Voir les avis : <a href="https://www.google.com/maps/place/Ma%C3%ABlys+Bizet+Ost%C3%A9opathe+Animalier+OA1271/@47.623551,2.4747612,17z/data=!4m22!1m13!4m12!1m4!2m2!1d2.4821213!2d47.6187501!4e1!1m6!1m2!1s0x8382b2ff4fb5d685:0xa9524382076c3195!2sAvis+google+de+ma%C3%ABlys+bizet+osteopathe+animalier!2m2!1d2.4773361!2d47.6235474!3m7!1s0x8382b2ff4fb5d685:0xa9524382076c3195!8m2!3d47.6235474!4d2.4773361!9m1!1b1!16s%2Fg%2F11shnywfn7?entry=ttu" target="_blank"> <img class="icone" src="img/google.png" alt="google"><span class="sr-only">avis sur google</span></a></p>
+            
+        </div>
+        <div class="ligne"></div>
+        
+        <a href="mentionlegales.html" class="mention"> Mentions légales</a>
+    </div>
+</footer> 
+
 </body>
 </html>
 

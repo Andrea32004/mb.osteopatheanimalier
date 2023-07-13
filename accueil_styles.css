@@ -100,7 +100,13 @@
 }
 
 .clic_map{
-    display: none;
+    display: flex;
+    font-size: 1rem;
+    font-style: italic;
+    width: 32vw;
+    padding-left: 39px;
+    min-width: 375px;
+    justify-content: center;
 }
 
 .texte_deroulant{
@@ -205,22 +211,34 @@
 
 
 /* BLOCK DEROULANT */
+@media (max-width: 909px){
+    .texte_deroulant{
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 891px){
+    .clic_map{
+        font-size: 0.9rem;
+    }
+}
 
 
 @media (max-width: 738px){
 .maps{
     padding-left: 10px;
 }
-
 }
 
-@media (max-width: 551px){
+
+@media (max-width: 783px){
    .block_deroulant{
     flex-direction: column-reverse;
    } 
 
    .texte_deroulant{
-    padding-left: 2px;
+    padding-left: 0px;
    }
 
    .maps{
@@ -230,18 +248,18 @@
    }
 
    .clic_map{
-    display: flex;
     font-size: 0.8rem;
-    font-style: italic;
-    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
 }
 
 .maps{
     padding-left: 0;
 }
 
-.texte1 ul{
-    padding-left: 0;
+.block_deroulant ul{
+    padding-left: 0px;
 }
 
 .texte1{
@@ -252,6 +270,10 @@
     margin: auto;
 }
 
+.secteur{
+    padding-left: 10px;
+    padding-right: 10px;
+}
 }
 
 

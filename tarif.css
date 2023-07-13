@@ -49,6 +49,7 @@ span {
     border: #6D071A dashed 1px;
     border-radius: 50% 20% / 10% 40%;
     padding: 15px;
+    z-index: 1;
 }
 
 .texte_avenir {
@@ -125,11 +126,6 @@ margin-left: 5%;
 }
 
 /* A domicile */
-.titre1,
-.titre2 {
-    margin-left: 42px;
-}
-
 .ligne2 {
     margin-left: 38px;
 }
