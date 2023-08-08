@@ -125,19 +125,13 @@
     margin-left: 83vw;
     text-align: center;
     padding: 1.5px;
-    border:1px dotted black;
     text-decoration: underline;
     color: #00011E; 
     display: block; 
+    border: 1px dotted #6D071A; 
+    font-style: italic;
 }
 
-
-.plus{
-    text-decoration: underline;
-    color: #00011E; 
-    display: block; 
-    text-align: center;
-}
 
 .block_plus{
     width: 360px;

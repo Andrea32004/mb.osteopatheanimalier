@@ -86,10 +86,16 @@ body{
 
 
 /* mots en gras */
-span{
+  span{
     font-weight: bold;
+     color: #6d071ad6;
 }
 
+/* lien des contacts dans la page */
+.mecontacter{
+  font-style: italic;
+  text-decoration: underline #6d071ad6;
+}
 
 /* flèche scroll */
 .scroll {
@@ -232,10 +238,18 @@ footer{
 
   .block_ariane{
     height: 100vh;
-    backdrop-filter: blur(15px);
     margin-left: -100%;
-    /* margin: 0; */
     transition: all 0.5s ease;
+
+/* SAFARI */
+  /* Navigateurs qui ne supportent pas backdrop-filter */
+  /* background-color: #EEE8DD; */
+
+  /* Filtrage flou pour Safari */
+  /* VOIR SI ON NE DOIT PAS METTRE CA EGALEMENT DANS LE BLOCK HORS MEDIA QUERIES */
+  -webkit-backdrop-filter: blur(35px);
+  -moz-backdrop-filter: blur(35px);
+  backdrop-filter: blur(35px);
   }
 
   .menu{

@@ -23,9 +23,16 @@
 
 /* BLOCK 1 */
 
-.texte1, .texte4{
+.texte4{
     padding-right: 10px;
     padding-left: 10px;
+}
+
+.texte1{
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+margin: auto;
 }
 
 .img_diplome{
@@ -38,13 +45,14 @@
     line-height: 33px;
 }
 
-.plus, .plus2{
+.plus{
     width: 372px;
     height: 52px;
     text-align: center;
-    border: 1px dotted black;
     text-decoration: underline;
     color: #00011E;
+    font-style: italic;
+    border: 1px dotted #6D071A; 
 }
 
 
@@ -61,8 +69,14 @@
 }
 
 .plus2{
-    margin: auto;
-/* CA NE MARCHE PAAAS */
+    margin-left: 36vw;
+    text-align: center;
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    color: #00011E;
+    font-style: italic;
+    border: 1px dotted #6D071A; 
 }
 
 /* paragraphe */

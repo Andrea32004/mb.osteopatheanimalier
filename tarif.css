@@ -147,9 +147,15 @@ margin-left: 5%;
     padding: 0;
 }
 
+.sous-titre1{
+    font-size: 1.1rem;
+    margin: auto;
+text-align: center;
+}
+
 .img_zone {
     width: 40vw;
-    min-width: 280px;
+    min-width: 336px;
 }
 
 
@@ -351,6 +357,10 @@ margin-left: 5%;
 
         .img_zone{
             padding-top: 29px;
+        }
+        
+        .sous-titre1{
+            font-size: 0.9rem;
         }
     }
 
