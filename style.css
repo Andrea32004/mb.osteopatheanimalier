@@ -241,13 +241,10 @@ footer{
     margin-left: -100%;
     transition: all 0.5s ease;
 
-/* SAFARI */
-  /* Navigateurs qui ne supportent pas backdrop-filter */
-  /* background-color: #EEE8DD; */
-
-  /* Filtrage flou pour Safari */
-  /* VOIR SI ON NE DOIT PAS METTRE CA EGALEMENT DANS LE BLOCK HORS MEDIA QUERIES */
+  /* SAFARI */
   -webkit-backdrop-filter: blur(35px);
+
+  /* FIREFOX */
   -moz-backdrop-filter: blur(35px);
   backdrop-filter: blur(35px);
   }
