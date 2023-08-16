@@ -43,7 +43,33 @@ h1, h2{
     align-items: center;
 }
 
-@media (max-width: 551px){
+.block_avis{
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+.img_avis{
+    width: 30vw;
+    object-fit: contain;
+}
+
+
+.contact_map{
+    margin: auto;
+    width: 43vw;
+}
+
+iframe{
+    width: 43vw;
+    height : 365px;
+    min-width: 468px;
+}
+
+
+
+
+@media (max-width: 876px){
     .block1{
         flex-direction: column;
         text-align: center;
@@ -53,4 +79,32 @@ h1, h2{
     .soustitre{
         font-size: 0.85rem;
     }
+
+    .block_avis{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .img_avis{
+        width: 340px;
+    }
+}
+
+@media (max-width: 1089px){
+    .contact_map{
+        width: 468px;
+    }
+}
+
+@media (max-width: 509px){
+    
+    .contact_map{
+        width: 350px;
+    }
+
+    iframe{
+        min-width: 350px;
+    }
+    
 }
